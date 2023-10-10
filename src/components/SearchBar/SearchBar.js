@@ -17,15 +17,15 @@ const SearchBar = () => {
     };
 
     return (
-        <div className={styles.searchBar}>
-            <div className={styles.sortingOptions}>
+        <div className={styles.SearchBar}>
+            <div className={styles.SortingOptions}>
                 <ul>{displaySortingOptions()}</ul>
             </div>
-            <div className={styles.inputFields}>
+            <div className={styles.InputFields}>
                 <input placeholder="Search restaurants"/>
                 <input placeholder="Where?"/>
             </div>
-            <div className={styles.searchButton}>
+            <div className={styles.SearchButton}>
                 <a>Search</a>
             </div>
         </div>
