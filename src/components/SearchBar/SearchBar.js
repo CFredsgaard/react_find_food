@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./SearchBar.css";
+
 const sortingOptions = {
     "Best Match" : "best_match",
     "Highest Ratings": "rating",
@@ -15,15 +17,15 @@ const SearchBar = () => {
     };
 
     return (
-        <div>
-            <div>
+        <div className={styles.searchBar}>
+            <div className={styles.sortingOptions}>
                 <ul>{displaySortingOptions()}</ul>
             </div>
-            <div>
+            <div className={styles.inputFields}>
                 <input placeholder="Search restaurants"/>
                 <input placeholder="Where?"/>
             </div>
-            <div>
+            <div className={styles.searchButton}>
                 <a>Search</a>
             </div>
         </div>
